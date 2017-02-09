@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+$font-stack-system: 'Lato', sans-serif;
+$all-buttons : '.btn';
+$all-text-inputs: 'text-inputs';
+
+
+/*
+    /// Grid
+*/
+
+/// Max width of the grid
+/// Sets the max-width property of the element that includes `outer-container()`. Set with the `!global` flag.
+$grid_width: 1200px !default;
+
+/// width of the column
+/// Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. Set with a `!global` flag.
+$column_width: 4.2358em !default;
+
+/// The gutter
+/// Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. Set with the `!global` flag.
+$gutter_width: 1.618em !default;
+
+/// Number of column
+/// Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
+$column_number: 12 !default;
+
+
+/*
+    Media Query
+*/
+
+// Breakpoint
+
+$bp-small: 768px;
+$bp-medium-min: 767px;
+$bp-medium-max: 1024px;
+$bp-large-min: 1023px;
+$bp-large-max: 1364px;
+$bp-xlarge: 1365px;
+
+
+// Media Queries
+$mq-small: max-width $bp-small;
+$mq-medium: min-width $bp-medium-min max-width $bp-medium-max;
+$mq-large: min-width $bp-large-min max-width $bp-large-max ;
+$mq-xlarge: min-width $bp-xlarge;
+
+/*
+    ////  Button
+*/
+
+//small button
+$btn_small_padding: 5px 10px;
+$btn_small_size: .8em;
+
+//medium button
+$btn_medium_padding: 8px 15px;
+$btn_medium_size: 1.1em;
+
+//large button
+$btn_large_padding: 11px 20px;
+$btn_large_size: 1.4em;
+
+//big button
+$btn_big_padding: 15px 25px;
+$btn_big_size: 1.8em;

@@ -1,0 +1,40 @@
+.grid{
+  @include outer-container;
+
+  @include media($mq-small) {
+    @for $i from 1 through $column_number {
+      .small-#{$i} {
+        @include span-columns($i);
+        @include omega(round(($column_number/$i))+n);
+      }
+    }
+  }
+
+  @include media($mq-medium) {
+    @for $i from 1 through $column_number {
+      .medium-#{$i} {
+        @include span-columns($i);
+        @include omega(round(($column_number/$i))+n);
+      }
+    }
+  }
+
+  @include media($mq-large) {
+    @for $i from 1 through $column_number {
+      .large-#{$i} {
+        @include span-columns($i);
+        @include omega(round(($column_number/$i))+n);
+      }
+    }
+  }
+
+  @include media($mq-xlarge) {
+    @for $i from 1 through $column_number {
+      .xlarge-#{$i} {
+        @include span-columns($i);
+        @include omega(round(($column_number/$i))+n);
+      }
+    }
+  }
+
+}
